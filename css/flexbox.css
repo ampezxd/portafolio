@@ -1,0 +1,498 @@
+body{
+    background-color: #F8F6F4;
+} 
+
+/*Sección del menu*/
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.menu__header{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    gap: 8px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.menu__list{
+    display: flex;
+    padding: 0%;
+    gap: 20px;
+}
+
+/*Sección del Header/Title/Hero*/
+
+.title {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente en el viewport */
+    align-items: center; /* Centra verticalmente en el viewport */
+    width: 100%; /* Ocupa todo el ancho disponible del viewport */
+}
+
+.title__div {
+    width: 100%; /* Ancho máximo permitido */
+    max-width: 1180px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.title__profile {
+    order: 2; /* Cambia el orden del elemento */
+    width: 200px; /* Ancho de la imagen del perfil */
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.title__container {
+    order: 1; /* Cambia el orden del elemento */
+    flex: 1; /* El contenido ocupará el espacio restante */
+    background-color: #F8F6F4;
+}
+
+.title__bio {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.title__subsection {
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 16px; /* Margen inferior para separación */
+    font-weight: normal;
+}
+
+.list__networ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.title__networ__item a {
+    text-decoration: none;
+    color: #333333; /* Color del texto */
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: medium;
+}
+
+
+/*Sección sobre mi*/
+
+.about{
+    background-color: #E3E1D9;
+    width: 100%;
+    display: flex;
+    text-align: start;
+    padding-left: 1em;
+}
+
+.about__container{
+
+    display: flex;
+    flex-direction: column; /* Cambia a disposición en columna */
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    width: 80%; /* Ancho máximo permitido */
+    max-width: 1180px;
+    height: 255px;
+}
+
+.about__title{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+
+.about__paragraph{
+    margin-bottom: 5px;
+    margin-top: 20px ;
+}
+
+/*Sección de Skills*/
+
+.skills{
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna */
+    justify-content: center; /* Centra verticalmente en el viewport */
+    align-items: center; /* Centra horizontalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 25px;
+}
+
+.skills__title{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px; /*Espacio inferior*/
+    margin-top: 5px;
+}
+
+.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;  
+    
+}
+
+.skills__box{
+    background-color: var(--color-fondo2);
+    width: 156px;
+    height: 118px;
+    box-sizing: border-box;
+    background-color: #E3E1D9;
+    padding-top: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Agrega una sombra */
+}
+
+.skills__box ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+
+
+/*Sección de hobbies*/
+
+.hobbies__container{
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna */
+    justify-content: center; /* Centra verticalmente en el viewport */
+    align-items: center; /* Centra horizontalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-top: 25px;
+}
+
+.hobbies__title{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px; 
+    margin-top: 5px;
+}
+
+.hobbies__line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 30px;
+    padding-top: 10px; 
+}
+
+.hobbies__box{
+    background-color: var(--color-fondo2);
+    width: 156px;
+    height: 118px;
+    box-sizing: border-box;
+    background-color: #E3E1D9;
+    padding-top: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Agrega una sombra */
+}
+
+.hobbies__box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Sección de Formación académica*/
+
+.academic{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.academic__courses{
+    text-align: center;
+}
+
+.academic__title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.academic__courses{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.academic__courses h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 120px;
+}
+
+.academic__courses__item__subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0; /* Establece margen a cero para eliminar cualquier espacio adicional */
+    text-align: start;
+    padding-bottom: 2em;
+}
+
+/*Sección de contacto*/
+
+section.formcontato {
+    background-color: #E3E1D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.formcontato__contacto{ 
+    padding-top: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formcontato__text{
+    padding-left: 2em;
+    text-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+.formcontato__title{
+    width: 100%;
+    display: flex;
+    font-size: 32px;
+    justify-content: start;
+    padding-bottom: 10px;
+}
+
+.formcontato__subtext{
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    justify-content: flex-start;
+}
+
+.formcontato__form{
+    width: 80%;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-content: center;
+}
+
+.formcontato__input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 10px gray;
+    padding-top: 1em;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Agrega una sombra */
+
+}
+
+.formcontato__input:focus{
+    outline: none;
+    border-bottom: 2px solid #333333 ;
+} 
+
+.formcontato__textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    padding-bottom: 3em;
+    margin-bottom: 10px;
+
+}
+
+.formcontato__textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #333333;
+}
+
+.formcontato__botao{
+    position: relative;
+    display: flex;
+    width: 15%;
+    
+    
+
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Agrega una sombra */
+    transition: box-shadow 0.3s ease; /* Agrega un efecto de transición suave */
+    
+
+}
+
+.formcontato__botao:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Sección footer */
+
+.footer{
+    background-color: #E3E1D9;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer__rodape p{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 480px){
+    
+    body{
+        width: 100%;
+        overflow-x: none;
+    }
+    /* Sección del menú */
+    .menu{
+        font-size: 10;
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        top: 0%;
+        left: 0%;
+    }
+
+    .menu__list__item:nth-child(1),
+    .menu__list__item:nth-child(2),
+    .menu__list__item:nth-child(3),
+    .menu__list__item:nth-child(4),
+    .menu__list__item:nth-child(5){
+        display: none;
+    }
+
+    /* Sección del Header/Title/Hero */
+
+
+    .title__div{
+        padding-left: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%; /* Establece la anchura máxima del contenedor de la imagen */
+        margin: 40px auto; 
+        padding-bottom: 1em;
+    }
+
+    .title__profile{
+        display: flex;
+        order: 1;
+        width: 120px; /* Ancho de la imagen */
+        padding-left: 0%;
+    }
+
+    .title__bio{
+        padding-top: 1em;
+        font-size: 22px;
+        display: flex;
+        align-content: start;
+    }
+
+    .title__subsection{
+        font-size: 18px;
+    }
+
+    /* Sección sobre mi */
+
+    .about__container{
+        width: 100%;
+    }
+
+    .about__title{
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .about__paragraph{
+        margin-right: 1em;
+    }
+
+    /* Sección de Skills */
+
+    .skills__line{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Sección de hobbies */
+
+    .hobbies__line{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    /* Sección de Formación académica */
+
+    .academic__courses{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .academic__courses__item__img{
+        display: block;
+        margin-left: auto; /* Centra la imagen moviendo el margen izquierdo automáticamente */
+        margin-right: auto; /* Centra la imagen moviendo el margen derecho automáticamente */
+    }
+
+    .academic__courses__item__subtitle{
+        text-align: center;
+    }
+
+    /* Sección de Contacto */
+
+    .formcontato__botao{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+}
